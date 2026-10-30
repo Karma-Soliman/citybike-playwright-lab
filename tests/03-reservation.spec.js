@@ -38,7 +38,7 @@ test('invalid email blocks reservation', async ({ page }) => {
   expect(postCount).toBe(0)
 });
 
-test.skip('reservation sends correct payload and confirms booking', async ({ page }) => {
+test('reservation sends correct payload and confirms booking', async ({ page }) => {
   // TODO
   let requestPayload
   await page.route("**/api/reservations", async (route) => {
